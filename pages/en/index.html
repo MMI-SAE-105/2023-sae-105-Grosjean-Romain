@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,37 @@
     <link rel="alternate" hreflang="en" href="/pages/en/index.html">
     </link>
 </head>
+
 <body>
-    <h1>TEST</h1>
+    <header class="header">
+        <a href="/pages/fr/index.html"><img src="/public/icons/32px/fr_flag.svg"></a>
+        <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn"><img src=""></button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <li class="menu-item"><img src="/" alt="" class="logo"><a href="" class="link-text">...
+                        <img src="/"></a></li>
+                <li class="menu-item"><img src="" alt="" class="logo"><a href="" class="link-text">...
+                        <img src="/"></a></li>
+                <li class="menu-item"><img src="" alt="" class="logo"><a href="" class="link-text">...
+                        <img src="/"></a></li>
+                <li class="menu-item"><img src="/" alt="" class="logo"><a href="" class="link-text">...
+                        <img src="/"></a></li>
+                <li class="menu-item"><img src="/" alt="" class="logo"><a href="" class="link-text">...
+                        <img src="/"></a></li>
+                <li class="menu-item"><img src="/" alt="Logo" class="logo"><a href="" class="link-text">...
+                        <img src="/"></a></li>
+            </ul>
+        </nav>
+
+
+
+
+
+
+
+
+
+        <h1>English</h1>
 </body>
+
 </html>
