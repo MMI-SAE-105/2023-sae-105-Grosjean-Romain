@@ -11,29 +11,28 @@ Sommaire :
 
 :root {
     /* Styles de l'harmonie colorée */
-    --: ;
-    --: ;
-    --: ;
-    --: ;
-    --: ;
-    --: ;
-    --: ;
-    --: ;
-    --: ;
-    --: ;
-    --: ;
-    --: ;
+    --baseblue-1: #35495E;
+    --baseblue-2: #526D84;
+    --lightblue-1: #5FADE0;
+    --lightblue-2: #8FC1DD;
+    --yellow-1: #F49C13;
+    --yellow-2: #E2B170;
+    --black: #262728;
+    --grey-1: #7F8C8D;
+    --grey-2: #BEC4C8;
+    --white: #ECF0F1;
+    --system-red: #E84B3C;
 
     /* Polices de caractère */
-    --font-heading-1: ;
-    --font-heading-2: ;
-    --font-heading-3: ;
-    --font-heading-4: ;
-    --font-body: ;
-    --font-small-text: ;
-    --font-button: ;
-    --font-small-text-uppercase: ;
-  
+    --font-heading-1: 'Moontserrat Alternates', sans-serif, light;
+    --font-heading-2: 'Moontserrat Alternates', sans-serif, font-weight:600;
+    --font-heading-3: 'Moontserrat Alternates', sans-serif;
+    --font-heading-4: 'Moontserrat Alternates', sans-serif, font-weight:600;
+    --font-body: 'Roboto', sans-serif;
+    --font-small-text: 'Playfair Display', serif;
+    --font-button:'Moontserrat Alternates', sans-serif, uppercase, font-weight: 600;
+    --font-small-text-uppercase: 'Playfair Display', serif, uppercase;
+
     /* Tailles de police de caractère */
     --title-main: rem;
     --title-xl: rem;
