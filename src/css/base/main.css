@@ -33,7 +33,7 @@ button {
 /* Règles typographiques générales */
 
 body {
-    
+    background-color: var(--baseblue-1);
 }
 
 h1 {
@@ -48,8 +48,12 @@ h3 {
     
 }
 
-p {
+h4 {
     
+}
+
+p {
+    color: var(--white);
 }
 
 /* Classes utilitaires */

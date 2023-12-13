@@ -1,0 +1,13 @@
+/* Formulaire
+
+Sommaire :
+
+    1. 
+*/
+
+.button_form {
+    display: inline-flex;
+    padding: auto;
+    justify-content: center;
+    gap: 1rem;
+}
