@@ -12,28 +12,30 @@ Sommaire :
 
 /* Base */
 
-@import "base/main.css";
-@import "base/media.css";
+@import "/src/css/base/errorpage.css";
+@import "/src/css/base/main.css";
+@import "/src/css/base/media.css";
 
 /* Components */
 
-@import "components/menu.css";
+@import "/src/css/components/menu.css";
 
 /* Layout */
 
-@import "layout/header.css";
-@import "layout/footer.css";
-@import "layout/section.css";
+@import "/src/css/layout/footer.css";
+@import "/src/css/layout/form.css";
+@import "/src/css/layout/header.css";
+@import "/src/css/layout/section.css";
 
 /* Utils */
 
-@import "utils/variables.css";
+@import "/src/css/utils/variables.css";
 
 /* Vendors */
 
-@import "vendors/normalize.css";
+@import "/src/css/vendors/style.css";
 
 /* Polices Google Font */
-@import url("https: //fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
