@@ -4,30 +4,33 @@ Sommaire :
 
     1. footer
     2. footer a
-    3. footer__iconSocial
-    4. footer__list
-    5. footer__title
-    6. footer__address
-    7. footer__logoLFAW
+    3. footer__list
+    4. footer__title
 */
 
 .footer {
     display: flex;
     flex-direction: column;
+    gap: var(--space3x);
+    padding: var(--space3x) var(--space4x);
+    background-color: var(--black);
+    color: var(--grey-1);
 }
 
 .footer a {
+    color: var(--grey-1);
+    font-family: var(--font-button);
     text-decoration: none;
-}
-
-.footer__iconSocial {
-
 }
 
 .footer__list {
     display: flex;
+    gap: var(--space3x);
 }
 
 .footer__title {
+    font-family: var(--font-heading-3);
+    font-size: var(--text-sm);
+    margin-top: 0;
     text-transform: uppercase;
 }

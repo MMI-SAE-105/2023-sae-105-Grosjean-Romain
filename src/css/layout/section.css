@@ -17,7 +17,7 @@ Sommaire :
 }
 
 .bus-line38 {
-    color: #006cb8;
+    color: var(--lightblue-1);
 }
 
 .bus-line68 {

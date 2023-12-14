@@ -23,7 +23,8 @@ figure {
 /* Overlay */
 
 .duotone {
-   
+   position: relative;
+   background-color: var(--baseblue-2);
 }
 
 .duotone::before {
@@ -31,5 +32,5 @@ figure {
 }
 
 .duotone>img {
-   
+display: block;
 }

@@ -10,9 +10,12 @@ Sommaire :
 
 .header {
     display: flex;
+    background-color: var(--baseblue-2);
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    padding: var(--space2x) var(--space4x);
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
@@ -21,10 +24,11 @@ Sommaire :
 .header__end {
     display: flex;
     align-items: center;
+    gap: var(--space2x);
 }
 
 .header__logo {
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -33,3 +37,4 @@ Sommaire :
 .header__menu {
     display: flex;
 }
+
