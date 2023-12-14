@@ -34,27 +34,22 @@ button {
 
 body {
     background-color: var(--baseblue-1);
-    font-family: var(--font-body);
 }
 
 h1 {
     color: var(--lightblue-1);
-    font-family: var(--font-heading-1);
 }
 
 h2 {
     color: var(--yellow-2);
-    font-family: var(--font-heading-2);
 }
 
 h3 {
     color: var(--lightblue-2);
-    font-family: var(--font-heading-3);
 }
 
 h4 {
     color: var(--white);
-    font-family: var(--font-button);
 }
 
 p {
