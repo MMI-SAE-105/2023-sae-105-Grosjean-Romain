@@ -7,38 +7,51 @@
         <title>Ces'Art Pelli ｜ Homepage</title>
         <link rel="stylesheet" href="/src/css/vendors/style.css">
         <link rel="alternate" hreflang="en" href="/pages/en/index.html">
-        </link>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
         <header class="header">
-                <a href="/pages/fr/index.html"><img src="/public/icons/32px/fr_flag.svg"></a>
 
                 <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn"><img
                                 src=""></button>
-                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                <nav id="mainNav" x-show="menuIsOpen" class="menu">
                         <ul>
-                                <li class="menu-item"><img src="/" alt=""><a href="/pages/en/0-profil.html" class="link-text">...
+                                <li class="menu__item"><img src="/" alt=""><a href="/pages/en/0-profil.html"
+                                                class="menu__item__link">...
                                                 <img src="/"></a></li>
-                                <li class="menu-item"><img src="" alt=""><a href="/pages/en/1-petronas_towers.html" class="link-text">...
+                                <li class="menu__item"><img src="" alt=""><a href="/pages/en/1-petronas_towers.html"
+                                                class="menu__item__link">...
                                                 <img src="/"></a></li>
-                                <li class="menu-item"><img src="" alt=""><a href="/pages/en/2-world_financial_center.html" class="link-text">...
+                                <li class="menu__item"><img src="" alt=""><a
+                                                href="/pages/en/2-world_financial_center.html"
+                                                class="menu__item__link">...
                                                 <img src="/"></a></li>
-                                <li class="menu-item"><img src="/" alt=""><a href="/pages/en/3-sunset_mountain_park.html" class="link-text">...
+                                <li class="menu__item"><img src="/" alt=""><a
+                                                href="/pages/en/3-sunset_mountain_park.html"
+                                                class="menu__item__link">...
                                                 <img src="/"></a></li>
-                                <li class="menu-item"><img src="/" alt=""><a href="/pages/en/4-comsat.html" class="link-text">...
+                                <li class="menu__item"><img src="/" alt=""><a href="/pages/en/4-comsat.html"
+                                                class="menu__item__link">...
                                                 <img src="/"></a></li>
-                                <li class="menu-item"><img src="/" alt=""><a href="/pages/en/5-pacific_design_center.html" class="link-text">...
+                                <li class="menu__item"><img src="/" alt=""><a
+                                                href="/pages/en/5-pacific_design_center.html"
+                                                class="menu__item__link">...
                                                 <img src="/"></a></li>
-                                <li class="menu-item"><img src="/" alt=""><a href="/pages/en/6-sevilla_tower.html" class="link-text">...
+                                <li class="menu__item"><img src="/" alt=""><a href="/pages/en/6-sevilla_tower.html"
+                                                class="menu__item__link">...
                                                 <img src="/"></a></li>
-                                <li class="menu-item"><img src="" alt=""><a href="/pages/en/7-museum_osaka.html" class="link-text">...
+                                <li class="menu__item"><img src="" alt=""><a href="/pages/en/7-museum_osaka.html"
+                                                class="menu__item__link">...
                                                 <img src="/"></a></li>
-                                <li class="menu-item"><img src="" alt=""><a href="/pages/en/8-weber_music_hall.html" class="link-text">...
+                                <li class="menu__item"><img src="" alt=""><a href="/pages/en/8-weber_music_hall.html"
+                                                class="menu__item__link">...
                                                 <img src="/"></a></li>
-                                <li class="menu-item"><img src="/" alt=""><a href="/pages/en/9-form.html" class="link-text">...
+                                <li class="menu__item"><img src="/" alt=""><a href="/pages/en/9-form.html"
+                                                class="menu__item__link">...
                                                 <img src="/"></a></li>
-                                <li class="menu-item"><img src="/" alt=""><a href="/pages/en/10-about.html" class="link-text">...
+                                <li class="menu__item"><img src="/" alt=""><a href="/pages/en/10-about.html"
+                                                class="menu__item__link">...
                                                 <img src="/"></a></li>
                         </ul>
                 </nav>
@@ -57,6 +70,7 @@
                         <h2>Biographie :</h2>
                         <h3>Qui est César Pelli ?</h3>
                         <p></p>
+
                         <img src="/public/img/0-profil/b.jpg" alt="cesar_pelli">
                 </section>
 
@@ -193,27 +207,27 @@
                         carte d'invalidité, Fondation Cartier Pass, Étudiants ⇒ Gratuit</p>
         </section>
 
-<footer>
-menu
-cesar pelli
-newsletter
-about
+        <footer>
+                menu
+                cesar pelli
+                newsletter
+                about
 
-nous suivre
+                nous suivre
 
-Romain Grosjean - Gr·A1
-mail : romaindyvertiteam@gmail.com
+                Romain Grosjean - Gr·A1
+                mail : romaindyvertiteam@gmail.com
 
-Mentions légales
-Projet réalisé dans le cadre d'un exercice pédagogique au
-département BUT MMI de Montbéliard - 2023-2024
-      
-*Hébergeur : Infomaniak
+                Mentions légales
+                Projet réalisé dans le cadre d'un exercice pédagogique au
+                département BUT MMI de Montbéliard - 2023-2024
 
-
+                *Hébergeur : Infomaniak
 
 
-</footer>
+
+
+        </footer>
 
 
 </body>

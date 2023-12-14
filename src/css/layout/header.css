@@ -19,6 +19,8 @@ Sommaire :
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
+    
+    
 }
 
 .header__end {
@@ -37,4 +39,3 @@ Sommaire :
 .header__menu {
     display: flex;
 }
-

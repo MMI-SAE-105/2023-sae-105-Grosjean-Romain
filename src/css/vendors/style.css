@@ -8,6 +8,7 @@ Sommaire :
     4. Variables (Utils)
     5. Libraries (Vendors)
     6. Polices Google Font
+    7. Autres polices
 */
 
 /* Base */
@@ -36,6 +37,11 @@ Sommaire :
 @import "/src/css/vendors/style.css";
 
 /* Polices Google Font */
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+
+/* Autres polices */
+
+@import url(/src/fonts/Montserrat_Alternates/);
