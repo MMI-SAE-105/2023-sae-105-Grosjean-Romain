@@ -24,13 +24,13 @@ Sommaire :
     --system-red: #E84B3C;
 
     /* Polices de caractère */
-    --font-heading-1: 'Moontserrat Alternates', sans-serif, light;
-    --font-heading-2: 'Moontserrat Alternates', sans-serif, font-weight:600;
-    --font-heading-3: 'Moontserrat Alternates', sans-serif;
-    --font-heading-4: 'Moontserrat Alternates', sans-serif, font-weight:600;
+    --font-heading-1: 'Montserrat Alternates', sans-serif, light;
+    --font-heading-2: 'Montserrat Alternates', sans-serif, font-weight:600;
+    --font-heading-3: 'Montserrat Alternates', sans-serif;
+    --font-heading-4: 'Montserrat Alternates', sans-serif, font-weight:600;
     --font-body: 'Roboto', sans-serif;
     --font-small-text: 'Playfair Display', serif;
-    --font-button:'Moontserrat Alternates', sans-serif, uppercase, font-weight: 600;
+    --font-button: 'Montserrat Alternates', sans-serif, uppercase, font-weight: 600;
     --font-small-text-uppercase: 'Playfair Display', serif, uppercase;
 
     /* Tailles de police de caractère */

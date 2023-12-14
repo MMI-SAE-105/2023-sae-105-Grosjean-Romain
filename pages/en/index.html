@@ -13,7 +13,7 @@
 <body>
         <header class="header">
 
-                <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn"><img
+                <button aria-controls="mainNav" onclick="menuIsOpen = !menuIsOpen" class="header__menuBtn"><img
                                 src=""></button>
                 <nav id="mainNav" x-show="menuIsOpen" class="menu">
                         <ul>
@@ -64,13 +64,20 @@
                 <section alt="agenda">
                         <h2>Dates</h2>
                         <p>• Du 13 avril au 23 juin 2024</p>
+                        <button><img src="/public/icons/32px+/reservation.svg" alt="reservation"
+                                        href="/pages/en/9-form.html"></button>
                 </section>
 
                 <section alt="profil">
                         <h2>Biographie :</h2>
                         <h3>Qui est César Pelli ?</h3>
-                        <p></p>
-
+                        <p>Architecte argentin de renom, César Pelli a laissé une empreinte indélébile sur
+                                l'architecture mondiale. Sa créativité
+                                distincte et son talent pour marier modernité et contexte ont donné naissance à des
+                                œuvres emblématiques, redéfinissant
+                                ainsi notre vision des espaces urbains.</p>
+                        <button><img src="/public/icons/32px+/know_more.svg" alt="see_more"
+                                        href="/pages/en/0-profil.html"></button>
                         <img src="/public/img/0-profil/b.jpg" alt="cesar_pelli">
                 </section>
 
@@ -90,6 +97,8 @@
                                         dépassé
                                         par le Burj Khalifa en 2010.</p>
                                 <img src="/public/img/1-petronas_towers/b.jpg" alt="card1">
+                                <button><img src="/public/icons/32px+/know_more.svg" alt="know_more"
+                                                href="/pages/en/1-petronas_towers.html"></button>
                         </article>
                         <article>
                                 <h3>World Financial Center (New York - US) • 1985-88</h3>
@@ -98,6 +107,8 @@
                                         tours
                                         dans le style postmoderne.</p>
                                 <img src="/public/img/2-world_financial_center/b.jpg" alt="card2">
+                                <button><img src="/public/icons/32px+/know_more.svg" alt="know_more"
+                                                href="/pages/en/2-world_financial_center.html"></button>
                         </article>
                         <article>
                                 <h3>Sunset Mountain Park Urban Nucleus (Los Angeles, Monts Santa Monica - US) • 1964-66
@@ -107,6 +118,8 @@
                                         élégantes
                                         et fonctionnalité aurait pu sefondrent harmonieusement ensemble.</p>
                                 <img src="/public/img/3-sunset_mountain_park/b.jpg" alt="card3">
+                                <button><img src="/public/icons/32px+/know_more.svg" alt="know_more"
+                                                href="/pages/en/3-sunset_mountain_park.html"></button>
                         </article>
                         <article>
                                 <h3>COMSAT Laboratories (Clarksburg, Maryland - US) • 1969</h3>
@@ -119,6 +132,8 @@
                                         paysage
                                         technologique.</p>
                                 <img src="/public/img/4-comsat/a.jpg" alt="card4">
+                                <button><img src="/public/icons/32px+/know_more.svg" alt="know_more"
+                                                href="/pages/en/4-comsat.html"></button>
                         </article>
                         <article>
                                 <h3>Pacific Design Center (West Hollywood - US) • 1975-2010</h3>
@@ -131,6 +146,8 @@
                                         urbain
                                         alentour.</p>
                                 <img src="/public/img/5-pacific_design_center/e.jpg" alt="card5">
+                                <button><img src="/public/icons/32px+/know_more.svg" alt="know_more"
+                                                href="/pages/en/5-pacific_design_center.html"></button>
                         </article>
                         <article>
                                 <h3>Sevilla Tower (Séville - ES) • 2016</h3>
@@ -141,6 +158,8 @@
                                         lignes
                                         fluides, ajoutant une silhouette distinctive à l'horizon de la ville.</p>
                                 <img src="/public/img/6-sevilla_tower/e.jpg" alt="card6">
+                                <button><img src="/public/icons/32px+/know_more.svg" alt="know_more"
+                                                href="/pages/en/6-sevilla_tower.html"></button>
                         </article>
                         <article>
                                 <h3>Musée national d'art (Osaka - JP) • 2004</h3>
@@ -153,6 +172,8 @@
                                         cœur même
                                         de la ville nippone d'Osaka.</p>
                                 <img src="/public/img/7-museum_osaka/b.jpg" alt="card7">
+                                <button><img src="/public/icons/32px+/know_more.svg" alt="know_more"
+                                                href="/pages/en/7-museum_osaka.html"></button>
                         </article>
                         <article>
                                 <h3>Weber Music Hall (Duluth, Minnesota - US) • 2005</h3>
@@ -164,6 +185,8 @@
                                         qui
                                         s'intègre pleinement à son environnement.</p>
                                 <img src="/public/img/8-weber_music_hall/a.jpg" alt="card8">
+                                <button><img src="/public/icons/32px+/know_more.svg" alt="know_more"
+                                                href="/pages/en/8-weber_music_hall.html"></button>
                         </article>
                 </section>
         </main>
@@ -205,28 +228,40 @@
                         • Fondation Cartier Pass ⇒ 18€ - 50€
                         • Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse,
                         carte d'invalidité, Fondation Cartier Pass, Étudiants ⇒ Gratuit</p>
+                <button><img src="/public/icons/32px+/reservation.svg" alt="reservation"
+                                href="/pages/en/9-form.html"></button>
         </section>
 
         <footer>
-                menu
-                cesar pelli
-                newsletter
-                about
+                <img src="/public/icons/logos/logo_center_footer.svg" alt="logo_footer">
+                <h4>menu</h4>
+                <h4>cesar pelli</h4>
+                <h4>newsletter</h4>
+                <img src="/public/icons/24px/mail.svg" alt="newsletter">
+                <h4>about</h4>
 
-                nous suivre
+                <a href="/pages/fr/index.html"><img src="/public/icons/32px/fr_flag.svg" alt="french_flag"></a>
+                <a href="/pages/en/index.html"><img src="/public/icons/32px/en_flag.svg" alt="english_flag"></a>
 
+                <h3>nous suivre</h3>
+                <img src="/public/icons/24px/facebook.svg" alt="facebook">
+                <img src="/public/icons/24px/instagram.svg" alt="instagram">
+                <img src="/public/icons/24px/twitter.svg" alt="twitter">
+
+                <img src="/public/icons/32px+/big-up.svg" alt="arrow_up">
+
+
+                <img src="/public/icons/logos/logo_center_decline.svg" alt="logo_footer">
                 Romain Grosjean - Gr·A1
                 mail : romaindyvertiteam@gmail.com
+                <img src="/public/icons/32px+/logo_mmi.svg" alt="logo_mmi">
 
-                Mentions légales
+                <h3>Mentions légales</h3>
                 Projet réalisé dans le cadre d'un exercice pédagogique au
                 département BUT MMI de Montbéliard - 2023-2024
 
                 *Hébergeur : Infomaniak
-
-
-
-
+                <img src="/public/icons/32px+/signature.svg" alt="signature_perso">
         </footer>
 
 
