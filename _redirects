@@ -1,7 +1,0 @@
-RewriteEngine On
-
-# Redirection vers la page française
-RewriteRule ^fr$ /pages/fr/index.html [L,R=301]
-
-# Redirection vers la page anglaise
-RewriteRule ^en$ /pages/en/index.html [L,R=301]

@@ -12,13 +12,25 @@
     <nav>
         <ul>
             <li>
-                <a href="/pages/fr/index.html">Français</a>
+                <a href="#" onclick="redirectToLanguage('fr')">Français</a>
             </li>
             <li>
-                <a href="/pages/en/index.html">English</a>
+                <a href="#" onclick="redirectToLanguage('en')">English</a>
             </li>
         </ul>
     </nav>
+
+    <script>
+        function redirectToLanguage(language) {
+            localStorage.setItem('preferredLanguage', language);
+            window.location.href = '/pages/' + language + '/index.html';
+        }
+
+        const preferredLanguage = localStorage.getItem('preferredLanguage');
+        if (preferredLanguage) {
+            window.location.href = '/pages/' + preferredLanguage + '/index.html';
+        }
+    </script>
 </body>
 
 </html>
