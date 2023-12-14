@@ -19,8 +19,12 @@ Sommaire :
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
-    
-    
+    z-index: 2;
+       
+}
+
+.header--atTop {
+    background-color: var(--grey-1);
 }
 
 .header__end {
@@ -34,6 +38,7 @@ Sommaire :
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: var(--header__logo-typo);
 }
 
 .header__menu {

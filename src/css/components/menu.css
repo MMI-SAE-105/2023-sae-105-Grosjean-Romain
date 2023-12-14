@@ -14,7 +14,11 @@ Sommaire :
     opacity: 0;
     position: fixed;
     transition: all 0.4s ease-in-out;
-    background-image: url();
+    inset: 0;
+    background-color: var(--baseblue-2);
+        font-size: var(--text-xl);
+        letter-spacing: var(--letter-spacing);
+   
 }
 
 .menu--open {

@@ -9,10 +9,12 @@ Sommaire :
 
 /* Images et vidéos */
 
-img,
+img:not(.header__logo):not(.header__logo-typo):not(.footer__logo):not(.signature):not(.mmi__logo):not(.icon):not(.section__link):not(.lang):not(.footer__logo__arrow),
 video {
-    max-width: 100%;
-    height: ;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
 }
 
 /* Figure */
@@ -46,4 +48,9 @@ figure {
     background-color: var(--baseblue-2);
     z-index: 1;
     mix-blend-mode: lighten;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }

@@ -1,0 +1,103 @@
+.carrousel,
+.carrouselparent-ecrans,
+.carrouselecran,
+.carousselliste-liens {
+    width: 100%;
+}
+
+.carrousel,
+.carrouselparent-ecrans {
+    position: relative;
+    overflow: hidden;
+}
+
+.carrouselparent-ecrans {
+    display: flex;
+    transition: transform 0.3s ease;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.carrouselecran {
+    flex: none;
+    width: 100%;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+.carrouselbtn,
+.carrouselbtn-avant,
+.carrouselbtn-apres {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 30%;
+    border: none;
+    display: grid;
+    place-content: center;
+    color: var(--black);
+    background: var(--black);
+}
+
+.carrouselbtn-avant {
+    left: 0;
+}
+
+.carrouselbtn-apres {
+    right: 0;
+}
+
+.carousselliste-liens {
+    justify-content: center;
+    display: flex;
+    justify-self: center;
+    padding: none;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.caroussellien {
+    color: var(--lightblue-1);
+    border: 1px solid var(--white);
+    padding: 0.5rem 1rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: var(--lightblue-2);
+}
+
+.carrousel {
+    display: flex;
+    gap: var(--space2x);
+    overflow-x: scroll;
+    margin-left: calc(0px - var(--space3x));
+    margin-right: calc(0px - var(--space3x));
+    scroll-snap-type: x mandatory;
+}
+
+.carrousel__item {
+    flex: 1 0 260px;
+    scroll-snap-align: center;
+}
+
+.carousel::-webkit-scrollbar-track,
+.carousel::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+}
+
+img {
+    display: block;
+    max-width: 85%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.carousselliste-liens a.actif {
+    background-color: var(--black);
+}

@@ -56,6 +56,7 @@ h2 {
 }
 
 h3 {
+    (--font-heading-2)
     color: var(--lightblue-2);
     line-height: 1.4;
 }
