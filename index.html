@@ -4,33 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lang.</title>
+    <title>Redirect</title>
     <link rel="stylesheet" href="src/css/vendors/style.css">
+    <script>
+        // Fonction de redirection basée sur la langue du navigateur
+        function redirectToLanguage() {
+            const userLanguage = navigator.language || navigator.userLanguage;
+            const languagePrefix = userLanguage.startsWith('fr') ? 'fr' : 'en';
+
+            // Redirection vers la page correspondante
+            window.location.href = `/pages/${languagePrefix}/index.html`;
+        }
+
+        // Appel automatique de la fonction au chargement de la page
+        redirectToLanguage();
+    </script>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="#" onclick="redirectToLanguage('fr')">Français</a>
-            </li>
-            <li>
-                <a href="#" onclick="redirectToLanguage('en')">English</a>
-            </li>
-        </ul>
-    </nav>
-
-    <script>
-        function redirectToLanguage(language) {
-            localStorage.setItem('preferredLanguage', language);
-            window.location.href = '/pages/' + language + '/index.html';
-        }
-
-        const preferredLanguage = localStorage.getItem('preferredLanguage');
-        if (preferredLanguage) {
-            window.location.href = '/pages/' + preferredLanguage + '/index.html';
-        }
-    </script>
+    <!-- Contenu facultatif, car la redirection se fait immédiatement -->
+    <p>Redirection en cours...</p>
 </body>
 
 </html>
