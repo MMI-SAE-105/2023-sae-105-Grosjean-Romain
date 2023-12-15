@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caes'Art Pelli ｜ Petronas Towers</title>
+    <link rel="icon" href="/public/icons/logos/logo_sun-4.svg">
+    <link rel="stylesheet" href="/src/css/vendors/style.css">
+    <link rel="alternate" hreflang="en" href="/pages/en/1-petronas_towers.html">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="/src/js/menu.js"></script>
+    <script defer src="/src/js/arrow.js"></script>
+    <script defer src="/src/js/carrousel.js"></script>
+</head>
+
+<body x-data="{ atTop: true }">
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header__atTop' : }">
+        <div class="header__start">
+            <a class="header__align" href="/pages/en/index.html">
+                <img class="header__logo-sun" src="/public/icons/logos/logo_sun-4.svg" alt="main__logo-sun">
+                <img class="header__logo-typo" src="/public/icons/logos/logo_typo.svg" alt="main__logo-typo">
+            </a>
+        </div>
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="Menu" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__hamburger"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/0-profil.html">Cesar Pelli
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/1-petronas_towers.html">Petronas Towers
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/2-world_financial_center.html">World
+                            Financial
+                            Center
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/3-sunset_mountain_park.html">Sunset
+                            Mountain
+                            Park
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/4-comsat.html">COMSAT Laboratories
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/5-pacific_design_center.html">Pacific
+                            Design
+                            Center
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/6-sevilla_tower.html">Sevilla Tower
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/7-museum_osaka.html">Museum of Art
+                            Osaka
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/8-weber_music_hall.html">Weber Music
+                            Hall
+                        </a></li>
+                    <li class="menu__item">
+                        <img src=""><a class="menu__link" href="/pages/en/9-form.html">Contact
+                            Form
+                        </a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/10-about.html">About
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section container">
+            <section class="intro">
+                <header class="intro__header">
+                    <section class="intro__near-header container" alt="intro">
+                        <h1 class="intro__title">Petronas Towers</h1>
+                        <h1>(Kuala Lumpur - MY) • 1998</h1>
+                        <h2 class="intro__sub-title">Touching the Sky...
+                        </h2>
+                        <figure class="intro__img duotone">
+                            <img class="main__image" src="/public/img/1-petronas_towers/b.jpg" alt="main__image">
+                        </figure>
+                    </section>
+                </header>
+            </section>
+
+            <section>
+                <blockquote class="citation__container">
+                    <img class="icon" src="/public/icons/32px/chevron-left.svg" alt="chevron-left">
+                    <p class="citation__text">As an internationally
+                        recognised landmark, the Petronas Twin Towers
+                        symbolise the courage, ingenuity, initiative, and determination, energy, confidence, optimism,
+                        advancement and zest of a
+                        nation.</p>
+                    <img class="icon" src="/public/icons/32px/chevron-right.svg" alt="chevron-left">
+                    <figcaption class="source">Source: <cite><a class="source"
+                                href="https://www.petronastwintowers.com.my/the-stories/#:~:text=%E2%80%9CAs%20an%20internationally%20recognised%20landmark,and%20zest%20of%20a%20nation.%E2%80%9D">
+                                Petronas Towers Official Website</a></cite>.</figcaption>
+                </blockquote>
+            </section>
+
+            <section class="principal" alt="principal">
+                <h2>Architectural Style and Influence</h2>
+                <p>The Petronas Twin Towers, designed by renowned architect César Antonio Pelli, embodies
+                    modernism with its
+                    clean aesthetic, use of contemporary materials such as glass and steel, and focus on functionality.
+                </p>
+                <h2>Iconic symbols</h2>
+                <p>Pelli, widely acclaimed for his contributions to the design of iconic skyscrapers, created the
+                    Petronas
+                    Twin Towers, which redefined the Kuala Lumpur skyline. From 1998 to 2004, they stood as the world's
+                    tallest structures,
+                    a testament to architectural daring and innovation.</p>
+                <h2>Innovation in Design</h2>
+                <p>The Twin Towers reflect Pelli's innovative approach to architecture. They incorporate contemporary
+                    elements while respecting the environment, marking a milestone in global architectural design.</p>
+                <h2>Legacy</h2>
+                <p>The Petronas Twin Towers carry with them the exceptional legacy of César Pelli. Their iconic
+                    silhouette, combined with
+                    the architect's innovation and creativity, continues to inspire professionals around the world.
+                    Pelli's impact on the
+                    architectural landscape remains undeniable, leaving behind a legacy that transcends geographical
+                    boundaries.</p>
+            </section>
+            <section>
+                <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+                    <div class="carrousel_parent-ecrans" x-ref="parent"
+                        @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                        <div id="ecran-1" class="carrousel_ecran">
+                            <figure>
+                                <img src="/public/img/1-petronas_towers/c.jpg" alt="image ecran 1"
+                                    class="carrousel_images">
+                                <figcaption class="carrousel_description"></figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-2" class="carrousel_ecran">
+                            <figure>
+                                <img src="/public/img/1-petronas_towers/d.jpg" alt="image ecran 2"
+                                    class="carrousel_images">
+                                <figcaption class="carrousel_description"></figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-3" class="carrousel_ecran">
+                            <figure>
+                                <img src="/public/img/1-petronas_towers/e.jpg" alt="image ecran 3"
+                                    class="carrousel_images">
+                                <figcaption class="carrousel_description"></figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-4" class="carrousel_ecran">
+                            <figure>
+                                <img src="/public/img/1-petronas_towers/f.jpg" alt="image ecran 4"
+                                    class="carrousel_images">
+                                <figcaption class="carrousel_description"></figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-5" class="carrousel_ecran">
+                            <figure>
+                                <img src="/public/img/1-petronas_towers/g.jpg" alt="image ecran 5"
+                                    class="carrousel_images">
+                                <figcaption class="carrousel_description"></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer" alt="footer">
+        <div>
+            <img class="footer__logo" src="/public/icons/logos/logo_center_footer.svg" alt="logo_footer">
+            <ul class="footer__list list-unstyled">
+                <li>
+                    <a href="">
+                        <h4 class="footer__title">menu</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/en/0-profil.html">
+                        <h4 class="footer__title">cesar pelli</h4>
+                    </a>
+                </li>
+                <li class="align">
+                    <a href="/pages/en/9-form.html">
+                        <h4 class="footer__title">newsletter</h4><img src="/public/icons/24px/mail.svg" alt="newsletter"
+                            class="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/en/10-about.html">
+                        <h4 class="footer__title">about</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <a class="footer__lang" href="/pages/fr/index.html"><img src="/public/icons/32px/fr_flag.svg"
+                    alt="french_flag"></a>
+            <a class="footer__lang" href="/pages/en/index.html"><img src="/public/icons/32px/en_flag.svg"
+                    alt="english_flag"></a>
+        </div>
+        <div class="footer__social">
+            <h3>Follow us</h3>
+            <ul class="footer__list list-unstyled">
+                <li class="align">
+                    <a href="https://facebook.com" aria-label="facebook"><img class="footer__iconSocial"
+                            src="/public/icons/24px/facebook.svg" alt="facebook" /></a>
+                </li>
+                <li class="align">
+                    <a href="https://instagram.com" aria-label="instagram"><img class="footer__iconSocial"
+                            src="/public/icons/24px/instagram.svg" alt="instagram" /></a>
+
+                </li>
+                <li class="align">
+                    <a href="https://twitter.com" aria-label="twitter"><img class="footer__iconSocial"
+                            src="/public/icons/24px/twitter.svg" alt="twitter" /></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img class="footer__logo__arrow" src="/public/icons/32px+/big-up-blue.svg" alt="arrow_up">
+            <img class="footer__logo" src="/public/icons/logos/logo_center_decline.svg" alt="logo_footer">
+            <p>Romain Grosjean - Gr·A1</p>
+            <p>mail : </p>
+            <address class="footer__address"><a
+                    href="mailto:conservatoire@agglo-belfort.fr">romaindyvertiteam@gmail.com</a>
+            </address>
+            <a href="https://butmmi.thomasjeu.fr" aria-label="mmi"><img class="footer__logo__mmi"
+                    src="/public/icons/32px+/logo_mmi.svg" alt="logo_mmi"></a>
+        </div>
+        <div>
+            <h3>Legal information</h3>
+            <p>Project carried out as part of an educational exercise at the BUT MMI department in
+                Montbéliard - 2023-2024</p>
+            <p class="host">*Host: <a href="https://www.infomaniak.com" target="_blank">Infomaniak</a></p>
+            <img class="signature" src="/public/icons/32px+/signature.svg" alt="signature_perso">
+
+        </div>
+    </footer>
+</body>
+
+</html>

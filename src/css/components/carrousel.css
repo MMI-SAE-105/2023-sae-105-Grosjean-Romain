@@ -2,114 +2,138 @@
 
 Sommaire :
 
-    1. carrousel
-    2. carrouselparent-ecrans
-    3. carrouselecran
-    4. carrouselbtn
-    5. carrouselbtn-avant
-    6. carrouselbtn-apres
-    7. carousselliste-liens
-    8. caroussellien
-    9. carrousel
-    10. carrousel__item
-    11. carousel::-webkit-scrollbar-track
-    12. carousel::-webkit-scrollbar-thumb
-    14. carousselliste-liens a.actif
+    1. carrousel_parent-ecrans
+    2. carrousel_ecran
+    3. carrousel_ecran img
+    4. carrousel_ecran figure
+    5. carrousel
+    6. carrousel_btn
+    7. carrousel_btn-avant
+    8. carrousel_btn-apres
+    9. carrousel .carousel_btn
+    10. carrousel_liste-liens
+    11. carrousel_lien
 */
 
-.carrousel,
-.carrouselparent-ecrans,
-.carrouselecran,
-.carousselliste-liens {
-    width: 100%;
-}
-
-.carrousel,
-.carrouselparent-ecrans {
-    position: relative;
-    overflow: hidden;
-}
-
-.carrouselparent-ecrans {
+.carrousel_parent-ecrans {
     display: flex;
-    transition: transform 0.3s ease;
-    scroll-snap-type: x mandatory;
+    width: 100%;
+    overflow-x: scroll;
     scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
-.carrouselecran {
-    flex: none;
+.carrousel_ecran {
     width: 100%;
-    box-sizing: border-box;
+    height: auto;
+    flex: 0 0 100%;
     scroll-snap-align: start;
+    text-align: center;
+    scroll-snap-stop: always;
 }
 
-.carrouselbtn,
-.carrouselbtn-avant,
-.carrouselbtn-apres {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 2rem;
-    height: 2rem;
-    border-radius: 30%;
-    border: none;
-    display: grid;
-    place-content: center;
-    color: var(--black);
-    background: var(--black);
+.carrousel_ecran img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-.carrouselbtn-avant {
-    left: 0;
-}
-
-.carrouselbtn-apres {
-    right: 0;
-}
-
-.carousselliste-liens {
-    justify-content: center;
-    display: flex;
-    justify-self: center;
-    padding: none;
-    list-style: none;
-    gap: 2rem;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.caroussellien {
-    color: var(--lightblue-1);
-    border: 1px solid var(--white);
-    padding: 0.5rem 1rem;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    background-color: var(--lightblue-2);
+.carrousel_ecran figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    text-decoration-color: var(--secondary-color);
 }
 
 .carrousel {
+    position: relative;
+}
+
+.carrousel_btn {
+    position: absolute;
+    top: 50%;
+    top: calc(min(730px, 100vw) / 16 * 9 / 2 + 1rem);
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    background: var(--black);
+    border-radius: 100%;
+    border: none;
+    display: grid;
+    place-content: center;
+    color: var(--white);
+    cursor: pointer;
+    padding: 5px 17px;
+}
+
+.carrousel_btn-avant {
+    left: 0;
+}
+
+.carrousel_btn-apres {
+    right: 0;
+}
+
+.carrousel .carousel_btn {
+    top: calc(9/20 * 100vh);
+}
+
+.carrousel_liste-liens {
     display: flex;
-    gap: var(--space2x);
-    overflow-x: scroll;
-    margin-left: calc(0px - var(--space3x));
-    margin-right: calc(0px - var(--space3x));
-    scroll-snap-type: x mandatory;
+    justify-content: center;
+    margin: 0;
+    list-style-type: none;
+    gap: 1rem;
+    margin-top: 40px;
+    padding: 1rem 0.5rem;
+    text-decoration: none;
 }
 
-.carrousel__item {
-    flex: 1 0 260px;
-    scroll-snap-align: center;
+.carrousel_lien {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: normal;
+    transition: color 0.3s ease-in-out;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 1px solid var(--black);
+    text-align: center;
+    cursor: pointer;
 }
 
-.carousel::-webkit-scrollbar-track,
-.carousel::-webkit-scrollbar-thumb {
-    background-color: var(--white);
+.carrousel_lien.actif {
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+
 }
 
-.carousselliste-liens a.actif {
-    background-color: var(--black);
+.carrousel_images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.list {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.carrousel_description {
+    color: var(--white);
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-style: oblique;
 }
