@@ -5,6 +5,7 @@ Sommaire :
     1. Images et vidéos
     2. Figure
     3. Overlay
+    4. Autres
 */
 
 /* Images et vidéos */
@@ -64,6 +65,8 @@ figure {
     mix-blend-mode: lighten;
     inset: 0;
 }
+
+/* Autres */
 
 .container {
     max-width: 1200px;

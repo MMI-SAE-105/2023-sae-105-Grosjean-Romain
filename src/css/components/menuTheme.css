@@ -1,0 +1,36 @@
+/* Composant - MenuTheme
+
+Sommaire :
+
+    1. menuTheme__list
+    2. menuTheme__item
+    3. menuTheme__link
+    4. menuTheme__icon 
+*/
+
+.menuTheme__list {
+  flex: 1;
+  display: flex;
+  gap: var(--space3x);
+  align-items: center;
+  justify-content: center;
+}
+
+.menuTheme__item {
+  flex: 1;
+  text-align: center;
+}
+
+.menuTheme__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  text-decoration: none;
+  font-size: var(--text-xl);
+}
+
+.menuTheme__icon {
+  width: 50px;
+}

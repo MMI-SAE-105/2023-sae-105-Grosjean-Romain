@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="/src/css/vendors/style.css">
         <link rel="alternate" hreflang="en" href="/pages/en/index.html">
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-        <script defer src="/src/js/general.js"></script>
+        <script defer src="/src/js/menu.js"></script>
+        <script defer src="/src/js/arrow.js"></script>
 </head>
 
 <body x-data="{ atTop: true }">
@@ -24,13 +25,14 @@
                         </a>
                 </div>
                 <div class="header__end">
-                        <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
-                                @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
-                                <span class="menu-btn__bar"></span>
+                        <button class="header__menu-btn menu-btn" aria-label="Menu" aria-controls="mainNav"
+                                @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                                <span class="menu-btn__hamburger"></span>
                         </button>
                         <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                                 <ul class="menu__list list-unstyled">
-                                        <li class="menu__item"><a class="menu__link" href="/pages/en/0-profil.html">...
+                                        <li class="menu__item"><a class="menu__link"
+                                                        href="/pages/en/0-profil.html">Cesar Pelli
                                                 </a></li>
                                         <li class="menu__item"><a class="menu__link"
                                                         href="/pages/en/1-petronas_towers.html">Petronas Towers
@@ -40,27 +42,32 @@
                                                         Center
                                                 </a></li>
                                         <li class="menu__item"><a class="menu__link"
-                                                        href="/pages/en/3-sunset_mountain_park.html">...
-                                                </a></li>
-                                        <li class="menu__item"><a class="menu__link" href="/pages/en/4-comsat.html">...
-                                                </a></li>
-                                        <li class="menu__item"><a class="menu__link"
-                                                        href="/pages/en/5-pacific_design_center.html">...
+                                                        href="/pages/en/3-sunset_mountain_park.html">Sunset Mountain
+                                                        Park
                                                 </a></li>
                                         <li class="menu__item"><a class="menu__link"
-                                                        href="/pages/en/6-sevilla_tower.html">...
+                                                        href="/pages/en/4-comsat.html">COMSAT Laboratories
                                                 </a></li>
                                         <li class="menu__item"><a class="menu__link"
-                                                        href="/pages/en/7-museum_osaka.html">...
+                                                        href="/pages/en/5-pacific_design_center.html">Pacific Design
+                                                        Center
                                                 </a></li>
                                         <li class="menu__item"><a class="menu__link"
-                                                        href="/pages/en/8-weber_music_hall.html">...
+                                                        href="/pages/en/6-sevilla_tower.html">Sevilla Tower
+                                                </a></li>
+                                        <li class="menu__item"><a class="menu__link"
+                                                        href="/pages/en/7-museum_osaka.html">Museum Osaka
+                                                </a></li>
+                                        <li class="menu__item"><a class="menu__link"
+                                                        href="/pages/en/8-weber_music_hall.html">Weber Music Hall
                                                 </a></li>
                                         <li class="menu__item">
-                                                <img src=""><a class="menu__link" href="/pages/en/9-form.html">...
-                                                        <img src="/public/icons/24px/mail.svg" alt=""></a>
+                                                <img src=""><a class="menu__link" href="/pages/en/9-form.html">Contact
+                                                        Form
+                                                </a>
                                         </li>
-                                        <li class="menu__item"><a class="menu__link" href="/pages/en/10-about.html">...
+                                        <li class="menu__item"><a class="menu__link"
+                                                        href="/pages/en/10-about.html">About
                                                 </a></li>
                                 </ul>
                         </nav>
@@ -94,6 +101,20 @@
                                                         class="section__link"
                                                         src="/public/icons/32px+/reservation_en.svg"
                                                         alt="reservation"></a></button>
+                        </section>
+
+                        <section>
+                                <blockquote class="citation__container">
+                                        <img class="icon" src="/public/icons/32px/chevron-left.svg" alt="chevron-left">
+                                        <p class="citation__text">I always look forward to the next project. That is one
+                                                of the wonderful things about architecture - you always can hope
+                                                for another project to design.</p>
+                                                <img class="icon" src="/public/icons/32px/chevron-right.svg"
+                                                        alt="chevron-left">
+                                        <figcaption class="source">Source: <cite><a class="source"
+                                                                href="https://www.azquotes.com/author/24974-Cesar_Pelli">A-Z
+                                                                Quotes</a></cite>.</figcaption>
+                                </blockquote>
                         </section>
 
                         <section class="profil" alt="profil">

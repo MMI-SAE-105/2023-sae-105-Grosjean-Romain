@@ -24,9 +24,8 @@ Sommaire :
     transition: all 0.4s ease-in-out;
     inset: 0;
     background-color: var(--baseblue-2);
-    font-size: var(--text-xl);
-    letter-spacing: var(--letter-spacing);
     transition: all 0.4s ease-in-out;
+    z-index: 2;
 }
 
 .menu--open {
@@ -52,39 +51,41 @@ Sommaire :
     width: 10vh;
     height: 10vh;
     position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
 }
 
 .menu-btn__bar,
-.menu-btn__bar::before,
-.menu-btn__bar::after {
-    content: "";
-    background-color: var(--baseblue-2);
+.menu-btn__close {
     display: block;
+    background-color: var(--baseblue-2);
     height: 2px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    z-index: 3;
-    transition: all 0.4s ease-in-out;
+    width: 30px;
+    margin: 6px 0;
+    transition: transform 0.4s ease-in-out;
 }
 
-.menu-btn__bar::before {
-    top: -2vh;
+.menu-btn--open .menu-btn__bar:first-child {
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.menu-btn__bar::after {
-    top: -2vh;
+.menu-btn--open .menu-btn__bar:last-child {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.menu-btn--open .menu-btn__bar,
-.menu-btn--open .menu-btn__bar::before,
-.menu-btn--open .menu-btn__bar::after {
-    background-color: var(--white);
-    transform: rotate(135deg);
+.menu-btn--open .menu-btn__close {
+    opacity: 1;
 }
 
-.menu-btn--open .menu-btn__bar::before,
-.menu-btn--open .menu-btn__bar::after {
-    transform: rotate(90deg);
-    top: 0;
+.menu-btn__close {
+    display: none;
+    font-size: 24px;
+    color: var(--baseblue-2);
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
 }

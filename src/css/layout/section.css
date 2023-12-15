@@ -64,6 +64,22 @@ Sommaire :
     margin-bottom: var(--space3x);
 }
 
+.citation__text {
+    font-style: italic;
+    color: var(--yellow-1);
+    text-decoration: none;
+}
+
+.source {
+    color: var(--lightblue-2);
+    text-decoration: none;
+}
+
+.citation__container {
+    display: flex;
+    align-items: center;
+}
+
 /* accès */
 
 .metro-line4 {
