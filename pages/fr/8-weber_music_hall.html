@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cés'Art Pelli ｜ Weber Music Hall</title>
+    <link rel="icon" href="/public/icons/logos/logo_sun-4.svg">
+    <link rel="stylesheet" href="/src/css/vendors/style.css">
+    <link rel="alternate" hreflang="fr" href="/pages/fr/8-weber_music_hall.html">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="/src/js/menu.js"></script>
+    <script defer src="/src/js/arrow.js"></script>
+    <script defer src="/src/js/carrousel.js"></script>
+</head>
+
+<body x-data="{ atTop: true }">
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header__atTop' : }">
+        <div class="header__start">
+            <a class="header__align" href="/pages/fr/index.html">
+                <img class="header__logo-sun" src="/public/icons/logos/logo_sun-4.svg" alt="main__logo-sun">
+                <img class="header__logo-typo" src="/public/icons/logos/logo_typo.svg" alt="main__logo-typo">
+            </a>
+        </div>
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="Menu" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__hamburger"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/0-profil.html">César Pelli
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/1-petronas_towers.html">Tours Pétronas
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/2-world_financial_center.html">World
+                            Financial
+                            Center
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/3-sunset_mountain_park.html">Sunset
+                            Mountain
+                            Park
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/4-comsat.html">COMSAT Laboratories
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/5-pacific_design_center.html">Pacific
+                            Design
+                            Center
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/6-sevilla_tower.html">Tour Sevilla
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/7-museum_osaka.html">Musée national
+                            d'art d'Osaka
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/8-weber_music_hall.html">Weber Music
+                            Hall
+                        </a></li>
+                    <li class="menu__item">
+                        <img src=""><a class="menu__link" href="/pages/fr/9-form.html">Formulaire de contact
+                        </a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/10-about.html">À propos
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section container">
+            <section class="intro">
+                <header class="intro__header">
+                    <section class="intro__near-header container" alt="intro">
+                        <h1 class="intro__title">Weber Music Hall</h1>
+                        <h1>(Duluth, Minnesota - US) • 2005</h1>
+                        <h2 class="intro__sub-title">A harmony melody in architecture...
+                        </h2>
+                        <figure class="intro__img duotone">
+                            <img class="main__image" src="/public/img/8-weber_music_hall/a.jpg" alt="main__image">
+                        </figure>
+                    </section>
+                </header>
+            </section>
+
+            <section>
+                <blockquote class="citation__container">
+                    <img class="icon" src="/public/icons/32px/chevron-left.svg" alt="chevron-left">
+                    <p class="citation__text">I see my buildings as pieces of cities, and in my designs I try to make
+                        them into responsible and contributing citizens.</p>
+                    <img class="icon" src="/public/icons/32px/chevron-right.svg" alt="chevron-left">
+                    <figcaption class="source">Source: <cite><a class="source"
+                                href="https://www.azquotes.com/author/24974-Cesar_Pelli">A-Z
+                                Quotes</a></cite>.</figcaption>
+                </blockquote>
+            </section>
+
+            <section class="principal" alt="principal">
+                <h2>Architectural Style and Influence</h2>
+                <p>A distinctive creation that combines architectural ingenuity and functionality dedicated to music.
+                    The boldness of the
+                    design is reflected in a structure that blends seamlessly into its surroundings, offering a space
+                    where modernity meets
+                    artistic expression.
+                </p>
+                <h2>Fusion of Ingenuity and Functionality</h2>
+                <p>The Weber Music Hall bears witness to Pelli's unique approach, integrating
+                    architectural ingenuity and functionality dedicated to music. The building offers an immersive
+                    experience where
+                    modernity and artistic expression meet in harmony.</p>
+                <h2>Harmonious Integration</h2>
+                <p>With its distinctive design, the Weber Music Hall blends harmoniously into the landscape of
+                    Duluth, Minnesota. The structure becomes an organic part of the environment, adding an artistic
+                    presence to the local
+                    cultural scene.</p>
+                <h2>Legacy</h2>
+                <p>Weber Music Hall embodies the visionary legacy of César Pelli. His lasting impact on the fusion of
+                    architecture and
+                    artistic expression continues to inspire contemporary designers. The building remains a living
+                    testament to Pelli's
+                    ability to transcend the boundaries between art and architecture.</p>
+            </section>
+            <section>
+                <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+                    <div class="carrousel_parent-ecrans" x-ref="parent"
+                        @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                        <div id="ecran-1" class="carrousel_ecran">
+                            <figure>
+                                <img src="/public/img/8-weber_music_hall/b.jpg" alt="image ecran 1"
+                                    class="carrousel_images">
+                                <figcaption class="carrousel_description"></figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-2" class="carrousel_ecran">
+                            <figure>
+                                <img src="/public/img/8-weber_music_hall/c.jpg" alt="image ecran 2"
+                                    class="carrousel_images">
+                                <figcaption class="carrousel_description"></figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-3" class="carrousel_ecran">
+                            <figure>
+                                <img src="/public/img/8-weber_music_hall/d.jpg" alt="image ecran 3"
+                                    class="carrousel_images">
+                                <figcaption class="carrousel_description"></figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-4" class="carrousel_ecran">
+                            <figure>
+                                <img src="/public/img/8-weber_music_hall/e.jpg" alt="image ecran 4"
+                                    class="carrousel_images">
+                                <figcaption class="carrousel_description"></figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-5" class="carrousel_ecran">
+                            <figure>
+                                <img src="/public/img/8-weber_music_hall/f.jpg" alt="image ecran 5"
+                                    class="carrousel_images">
+                                <figcaption class="carrousel_description"></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer" alt="footer">
+        <div>
+            <img class="footer__logo" src="/public/icons/logos/logo_center_footer.svg" alt="logo_footer">
+            <ul class="footer__list list-unstyled">
+                <li>
+                    <a href="">
+                        <h4 class="footer__title">menu</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/fr/0-profil.html">
+                        <h4 class="footer__title">césar pelli</h4>
+                    </a>
+                </li>
+                <li class="align">
+                    <a href="/pages/fr/9-form.html">
+                        <h4 class="footer__title">newsletter</h4><img src="/public/icons/24px/mail.svg" alt="newsletter"
+                            class="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/fr/10-about.html">
+                        <h4 class="footer__title">à propos</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <a class="footer__lang" href="/pages/en/8-weber_music_hall.html"><img src="/public/icons/32px/en_flag.svg"
+                    alt="english_flag"></a>
+            <a class="footer__lang" href="/pages/fr/8-weber_music_hall.html"><img src="/public/icons/32px/fr_flag.svg"
+                    alt="french_flag"></a>
+        </div>
+        <div class="footer__social">
+            <h3>Nous suivre</h3>
+            <ul class="footer__list list-unstyled">
+                <li class="align">
+                    <a href="https://facebook.com" aria-label="facebook"><img class="footer__iconSocial"
+                            src="/public/icons/24px/facebook.svg" alt="facebook" /></a>
+                </li>
+                <li class="align">
+                    <a href="https://instagram.com" aria-label="instagram"><img class="footer__iconSocial"
+                            src="/public/icons/24px/instagram.svg" alt="instagram" /></a>
+
+                </li>
+                <li class="align">
+                    <a href="https://twitter.com" aria-label="twitter"><img class="footer__iconSocial"
+                            src="/public/icons/24px/twitter.svg" alt="twitter" /></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img class="footer__logo__arrow" src="/public/icons/32px+/big-up-blue.svg" alt="arrow_up">
+            <img class="footer__logo" src="/public/icons/logos/logo_center_decline.svg" alt="logo_footer">
+            <p>Romain Grosjean - Gr·A1</p>
+            <p>mail : </p>
+            <address class="footer__address"><a
+                    href="mailto:conservatoire@agglo-belfort.fr">romaindyvertiteam@gmail.com</a>
+            </address>
+            <a href="https://butmmi.thomasjeu.fr" aria-label="mmi"><img class="footer__logo__mmi"
+                    src="/public/icons/32px+/logo_mmi.svg" alt="logo_mmi"></a>
+        </div>
+        <div>
+            <h3>Mentions légales</h3>
+            <p>Projet réalisé dans le cadre d'un exercice pédagogique au
+                département BUT MMI de Montbéliard - 2023-2024</p>
+            <p class="host">*Hébergeur : <a href="https://www.infomaniak.com" target="_blank">Infomaniak</a></p>
+            <img class="signature" src="/public/icons/32px+/signature.svg" alt="signature_perso">
+
+        </div>
+    </footer>
+</body>
+
+</html>
