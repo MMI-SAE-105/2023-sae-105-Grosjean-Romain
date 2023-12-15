@@ -21,6 +21,7 @@ Sommaire :
 
 @import "/src/css/components/menu.css";
 @import "/src/css/components/intro.css";
+@import "/src/css/components/carrousel.css";
 
 /* Layout */
 
@@ -35,7 +36,6 @@ Sommaire :
 
 /* Vendors */
 
-@import "/src/css/vendors/style.css";
 @import "/src/css/vendors/normalize.css";
 @import "/src/css/vendors/fonts.css";
 

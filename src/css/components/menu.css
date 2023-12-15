@@ -16,9 +16,9 @@ Sommaire :
     transition: all 0.4s ease-in-out;
     inset: 0;
     background-color: var(--baseblue-2);
-        font-size: var(--text-xl);
-        letter-spacing: var(--letter-spacing);
-   
+    font-size: var(--text-xl);
+    letter-spacing: var(--letter-spacing);
+    transition: all 0.4s ease-in-out;
 }
 
 .menu--open {
@@ -27,42 +27,56 @@ Sommaire :
 }
 
 .menu__list {
-    margin-top: vh;
-    margin-left: vw;
+    margin-top: 10vh;
+    margin-left: 10vh;
 }
 
 .menu__item {
-    margin-top: 100%;
+    margin-top: 15%;
 }
 
 .menu__link {
-    color: var(--);
+    color: var(--lightblue-2);
     text-decoration: none;
 }
 
-.menu-btn {}
+.menu-btn {
+    width: 10vh;
+    height: 10vh;
+    position: relative;
+}
 
 .menu-btn__bar,
 .menu-btn__bar::before,
 .menu-btn__bar::after {
+    content: "";
+    background-color: var(--baseblue-2);
     display: block;
+    height: 2px;
+    width: 100%;
     position: absolute;
+    left: 0;
+    z-index: 3;
     transition: all 0.4s ease-in-out;
 }
 
-.menu-btn__bar::before {}
+.menu-btn__bar::before {
+    top: -2vh;
+}
 
-.menu-btn__bar::after {}
+.menu-btn__bar::after {
+    top: -2vh;
+}
 
 .menu-btn--open .menu-btn__bar,
 .menu-btn--open .menu-btn__bar::before,
 .menu-btn--open .menu-btn__bar::after {
-    background-color: var(--);
-    transform: rotate(deg);
+    background-color: var(--white);
+    transform: rotate(135deg);
 }
 
 .menu-btn--open .menu-btn__bar::before,
 .menu-btn--open .menu-btn__bar::after {
-    transform: rotate(deg);
+    transform: rotate(90deg);
     top: 0;
 }

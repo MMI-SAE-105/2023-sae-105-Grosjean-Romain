@@ -20,11 +20,13 @@ Sommaire :
     align-items: center;
     flex-shrink: 0;
     z-index: 2;
-       
+
 }
 
+.header__start {}
+
 .header--atTop {
-    background-color: var(--grey-1);
+    background-color: var(--white);
 }
 
 .header__end {
@@ -33,12 +35,18 @@ Sommaire :
     gap: var(--space2x);
 }
 
-.header__logo {
+.header__logo-typo {
     display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: var(--header__logo-typo);
+}
+
+.header__logo-sun {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__menu {

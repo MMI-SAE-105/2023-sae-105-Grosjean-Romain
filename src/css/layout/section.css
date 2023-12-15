@@ -45,6 +45,16 @@ Sommaire :
     opacity: 0.5;
 }
 
+.card__div {
+    display: flex;
+    align-items: center;
+}
+
+.section__link {
+    display: inline-block;
+    margin-top: var(--space3x);
+    margin-bottom: var(--space3x);
+}
 
 /* Accès */
 

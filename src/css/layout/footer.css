@@ -35,6 +35,44 @@ Sommaire :
     text-transform: uppercase;
 }
 
-.footer__iconSocial {
-    
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-bottom: 6vh;
+    height: 10vh;
+}
+
+.footer__logo__arrow {
+    margin-left: 80vh;
+    height: 20vh;
+}
+
+.footer__lang {
+    display: flex;
+    margin-top: 6vh;
+    margin-left: 67vh;
+    height: 7vh;
+}
+
+.footer__address {}
+
+.footer__logo__mmi {
+    display: flex;
+    margin-top: 6vh;
+    margin-left: 77.5vh;
+    height: 8vh;
+}
+
+.signature {
+    display: flex;
+    margin-left: 80vh;
+    margin-top: -6vh;
+    height: 5vh;
 }

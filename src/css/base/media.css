@@ -9,7 +9,7 @@ Sommaire :
 
 /* Images et vidéos */
 
-img:not(.header__logo):not(.header__logo-typo):not(.footer__logo):not(.signature):not(.mmi__logo):not(.icon):not(.section__link):not(.lang):not(.footer__logo__arrow),
+img:not(.header__logo):not(.header__logo-typo):not(.footer__logo):not(.signature):not(.footer__logo__mmi):not(.icon):not(.section__link):not(.lang):not(.footer__logo__arrow):not(.main__image),
 video {
     width: 100%;
     height: auto;
@@ -46,6 +46,7 @@ figure {
     position: absolute;
     inset: 0;
     background-color: var(--baseblue-2);
+    opacity: 0.3;
     z-index: 1;
     mix-blend-mode: lighten;
 }
@@ -53,4 +54,12 @@ figure {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.icon {
+    width: 5vh;
+    height: 5vh;
+    vertical-align: middle;
+    margin-left: 0;
+    margin-right: 1.5vh;
 }
