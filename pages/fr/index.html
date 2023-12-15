@@ -1,14 +1,405 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cés'Art Pelli ｜ Accueil</title>
+    <link rel="icon" href="/public/icons/logos/logo_sun-4.svg">
     <link rel="stylesheet" href="/src/css/vendors/style.css">
-    <link rel="alternate" hreflang="fr" href="/pages/fr/index.html">
-    </link>
+    <link rel="alternate" hreflang="en" href="/pages/en/index.html">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="/src/js/menu.js"></script>
+    <script defer src="/src/js/arrow.js"></script>
 </head>
-<body>
-    <h1>Cés'Art Pelli</h1>
+
+<body x-data="{ atTop: true }">
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header__atTop' : }">
+        <div class="header__start">
+            <a class="header__align" href="/pages/en/index.html">
+                <img class="header__logo-sun" src="/public/icons/logos/logo_sun-4.svg" alt="main__logo-sun">
+                <img class="header__logo-typo" src="/public/icons/logos/logo_typo.svg" alt="main__logo-typo">
+            </a>
+        </div>
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="Menu" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__hamburger"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/0-profil.html">César Pelli
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/1-petronas_towers.html">Tours Pétronas
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/fr/2-world_financial_center.html">World
+                            Financial
+                            Center
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/3-sunset_mountain_park.html">Sunset
+                            Mountain
+                            Park
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/4-comsat.html">COMSAT Laboratories
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/5-pacific_design_center.html">Pacific
+                            Design
+                            Center
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/6-sevilla_tower.html">Tour Sevilla
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/7-museum_osaka.html">Musée national
+                            d'art
+                        </a></li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/8-weber_music_hall.html">Weber Music
+                            Hall
+                        </a></li>
+                    <li class="menu__item">
+                        <img src=""><a class="menu__link" href="/pages/en/9-form.html">Contact
+                            Form
+                        </a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="/pages/en/10-about.html">About
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section container">
+            <section class="intro">
+                <header class="intro__header">
+                    <section class="intro__near-header container" alt="intro">
+                        <h1 class="intro__title">Pelli, le Cés'Art du postmodernisme</h1>
+                        <h2 class="intro__sub-title">Exposition temporaire d'un architecte
+                            unique dans
+                            son
+                            genre</h2>
+                        <figure class="intro__img duotone">
+                            <img class="main__image" src="/public/img/2-world_financial_center/h.jpg" alt="main__image">
+                        </figure>
+                    </section>
+                </header>
+            </section>
+
+
+            <section class="agenda" alt="agenda">
+                <h2>Dates</h2>
+                <p>• Du 13 avril au 23 juin 2024</p>
+                <button><a href="/pages/en/9-form.html" alt="reservation-link"><img class="section__link"
+                            src="/public/icons/32px+/reservation.svg" alt="reservation"></a></button>
+            </section>
+
+            <section>
+                <blockquote class="citation__container">
+                    <img class="icon" src="/public/icons/32px/chevron-left.svg" alt="chevron-left">
+                    <p class="citation__text">J'attends toujours avec impatience le prochain projet. C'est l'un des
+                        aspects merveilleux de l'architecture : on peut
+                        toujours espérer avoir un autre projet à concevoir.</p>
+                    <img class="icon" src="/public/icons/32px/chevron-right.svg" alt="chevron-left">
+                    <figcaption class="source">Source : <cite><a class="source"
+                                href="https://www.azquotes.com/author/24974-Cesar_Pelli">A-Z
+                                Quotes</a></cite>.</figcaption>
+                </blockquote>
+            </section>
+
+            <section class="profil" alt="profil">
+                <h2>Biographie</h2>
+                <h3>Qui est César Pelli ?</h3>
+                <p>Architecte argentin de renom, César Pelli a laissé une empreinte indélébile sur
+                    l'architecture mondiale. Sa créativité
+                    distincte et son talent pour marier modernité et contexte ont donné naissance à
+                    des
+                    œuvres emblématiques, redéfinissant
+                    ainsi notre vision des espaces urbains.</p>
+                <img src="/public/img/0-profil/b.jpg" alt="cesar_pelli">
+                <button><a href="/pages/en/0-profil.html" alt="read_more-link"><img class="section__link"
+                            src="/public/icons/32px+/know_more.svg" alt="read_more"></a></button>
+            </section>
+
+
+            <section class="works" alt="works">
+                <h2>Aperçus de l'exposition</h2>
+                <article>
+                    <h3>Tours Pétronas (Kuala Lumpur - MY) • 1998</h3>
+                    <p>
+                        Emblématiques de la ville de Kuala Lumpur, ces tours jumelles ont à
+                        elle-seule
+                        totalement défini le skyline malaisien. Elles étaient les plus hautes
+                        tours du
+                        monde à
+                        l'époque de leur achèvement dépassé par le Taipei 101 en 2004 qui sera
+                        lui-même
+                        dépassé
+                        par le Burj Khalifa en 2010.</p>
+                    <img src="/public/img/1-petronas_towers/b.jpg" alt="card1">
+                    <button><a href="/pages/en/1-petronas_towers.html" alt="see_more-link"><img class="section__link"
+                                src="/public/icons/32px+/see_more.svg" alt="see_more"></a></button>
+                </article>
+                <article>
+                    <h3>World Financial Center (New York - US) • 1985-88</h3>
+                    <p>
+                        Complexe de bureaux situé à Battery Park City à Manhattan, comprenant
+                        plusieurs
+                        tours
+                        dans le style postmoderne.</p>
+                    <img src="/public/img/2-world_financial_center/b.jpg" alt="card2">
+                    <button><a href="/pages/en/2-world_financial_center.html"><img class="section__link"
+                                src="/public/icons/32px+/see_more.svg" alt="know_more"></a></button>
+                </article>
+                <article>
+                    <h3>Sunset Mountain Park Urban Nucleus (Los Angeles, Monts Santa Monica - US) •
+                        1964-66
+                    </h3>
+                    <p>
+                        Mariant architecture contemporaine et nature. C'est espace dynamique où
+                        formes
+                        élégantes
+                        et fonctionnalité aurait pu sefondrent harmonieusement ensemble.</p>
+                    <img src="/public/img/3-sunset_mountain_park/b.jpg" alt="card3">
+                    <button><a href="/pages/en/3-sunset_mountain_park.html"><img class="section__link"
+                                src="/public/icons/32px+/see_more.svg" alt="know_more"></a></button>
+                </article>
+                <article>
+                    <h3>COMSAT Laboratories (Clarksburg, Maryland - US) • 1969</h3>
+                    <p>
+                        Centre de recherche et de développement, ce lieu témoigne du mariage
+                        réussi
+                        entre
+                        esthétique moderne et fonctionnalité. Les formes distinctives du
+                        bâtiment
+                        reflètent une
+                        approche avant-gardiste, en créant un lieu empreint de sophistication au
+                        cœur du
+                        paysage
+                        technologique.</p>
+                    <img src="/public/img/4-comsat/a.jpg" alt="card4">
+                    <button><a href="/pages/en/4-comsat.html"><img class="section__link"
+                                src="/public/icons/32px+/see_more.svg" alt="know_more"></a></button>
+                </article>
+                <article>
+                    <h3>Pacific Design Center (West Hollywood - US) • 1975-2010</h3>
+                    <p>
+                        Repère coloré et audacieux. Ces trois tours, teintées de couleurs vives
+                        abritent
+                        des
+                        espaces dédiés au design, à la mode et aux arts visuels. Et c'est sans
+                        compter
+                        que cet
+                        espace ajoute également une touche artistique distinctive à
+                        l'environnement
+                        urbain
+                        alentour.</p>
+                    <img src="/public/img/5-pacific_design_center/e.jpg" alt="card5">
+                    <button><a href="/pages/en/5-pacific_design_center.html"><img class="section__link"
+                                src="/public/icons/32px+/see_more.svg" alt="know_more"></a></button>
+                </article>
+                <article>
+                    <h3>Sevilla Tower (Séville - ES) • 2016</h3>
+                    <p>
+                        Se dressant avec élégance et rehaussant le panorama urbain très bas.
+                        Emblématique, elle
+                        témoigne du talent de l'architecte à marier l'esthétique contemporaine
+                        avec des
+                        lignes
+                        fluides, ajoutant une silhouette distinctive à l'horizon de la ville.
+                    </p>
+                    <img src="/public/img/6-sevilla_tower/e.jpg" alt="card6">
+                    <button><a href="/pages/fr/6-sevilla_tower.html"><img class="section__link"
+                                src="/public/icons/32px+/see_more.svg" alt="know_more"></a></button>
+                </article>
+                <article>
+                    <h3>Musée national d'art (Osaka - JP) • 2004</h3>
+                    <p>
+                        Alliance harmonieuse de la culture et de l'architecture. Les lignes
+                        modernes et
+                        la
+                        présence imposante de la bâtise évoquent une fusion réussie entre un
+                        créature
+                        vivante et
+                        quelque chose de mécanique, faisant ainsi du musée un joyau
+                        architectural au
+                        cœur même
+                        de la ville nippone d'Osaka.</p>
+                    <img src="/public/img/7-museum_osaka/b.jpg" alt="card7">
+                    <button><a href="/pages/en/7-museum_osaka.html"><img class="section__link"
+                                src="/public/icons/32px+/see_more.svg" alt="know_more"></a></button>
+                </article>
+                <article>
+                    <h3>Weber Music Hall (Duluth, Minnesota - US) • 2005</h3>
+                    <p>
+                        Création distinctive, elle allie ingéniosité architecturale et
+                        fonctionnalité,
+                        le
+                        bâtiment offre un espace dédié à la musique, où la modernité se conjugue
+                        avec
+                        l'expression artistique. L'audace du design se manifeste ici dans une
+                        structure
+                        qui
+                        s'intègre pleinement à son environnement.</p>
+                    <img src="/public/img/8-weber_music_hall/a.jpg" alt="card8">
+                    <button><a href="/pages/en/8-weber_music_hall.html"><img class="section__link"
+                                src="/public/icons/32px+/see_more.svg" alt="know_more"></a></button>
+                </article>
+            </section>
+
+            <section class="maps" alt="maps">
+                <div class="card__div">
+                    <img src="/public/icons/32px/map-place.svg" alt="location" class="icon">
+                    <h2>Lieu de l'exposition</h2>
+                </div>
+                <p>• Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+                <img src="/public/img/9-home/map_1.svg" alt="worldmap">
+                <img src="/public/img/9-home/map_2.svg" alt="worldmap">
+            </section>
+
+            <section class="hours" alt="hours">
+                <div class="card__div">
+                    <img src="/public/icons/32px/clock.svg" alt="clock" class="icon">
+                    <h2>Horaires</h2>
+                </div>
+                <p>
+                    • Horaires d’ouverture : Tous les jours de 11h à 20h, sauf le lundi. Nocturne le
+                    mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45
+                    les mardis).</p>
+            </section>
+
+            <section class="access" alt="access">
+                <div class="card__div">
+                    <img src="/public/icons/32px/car.svg" alt="car" class="icon">
+                    <h2>Accès</h2>
+                </div>
+                <ul class="list-unstyled">
+                    <li>
+                        <p>
+                            • En métro ⇒ Lignes <span class="metro-line4">4</span> ou <span class="metro-line6">6</span>
+                            -
+                            Station Raspail ou Denfert-Rochereau</p>
+                    </li>
+                    <li>
+                        <p>• En bus ⇒ Lignes <span class="bus-line38">38</span>, <span class="bus-line68">68</span>,
+                            <span class="bus-line88">88</span>
+                            ou
+                            <span class="bus-line91">91</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>• En RER ⇒ Station Denfert-Rochereau</p>
+                    </li>
+                    <li>
+                        <p>• En voiture ⇒ Un stationnement est réservé aux visiteurs en
+                            situation de
+                            handicap, devant le 2
+                            rue Victor Schoelcher
+                        </p>
+                    </li>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="prices" alt="prices">
+                <div class="card__div">
+                    <img src="/public/icons/32px/euro.svg" alt="money" class="icon">
+                    <h2>Tarifs</h2>
+                </div>
+                <ul class="list-unstyled">
+                    <li>
+                        <p>• Tarif ⇒ 11€</p>
+                    </li>
+                    <li>
+                        <p>• Tarif réduit ⇒ 7,50€</p>
+                    </li>
+                    <li>
+                        <p>• Réduction 13 - 25 ans ⇒ 5€</p>
+                    </li>
+                    <li>
+                        <p>• Fondation Cartier Pass ⇒ 18€ - 50€</p>
+                    </li>
+                    <li>
+                        <p>• Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de
+                            presse,
+                            carte d'invalidité, Fondation Cartier Pass, Étudiants ⇒ Gratuit
+                        </p>
+                    </li>
+                </ul>
+                <button><img class="section__link" src="/public/icons/32px+/reservation.svg" alt="reservation"
+                        href="/pages/en/9-form.html"></a></button>
+            </section>
+    </main>
+
+    <footer class="footer" alt="footer">
+        <div>
+            <img class="footer__logo" src="/public/icons/logos/logo_center_footer.svg" alt="logo_footer">
+            <ul class="footer__list list-unstyled">
+                <li>
+                    <a href="">
+                        <h4 class="footer__title">menu</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/en/0-profil.html">
+                        <h4 class="footer__title">césar pelli</h4>
+                    </a>
+                </li>
+                <li class="align">
+                    <a href="/pages/en/9-form.html">
+                        <h4 class="footer__title">newsletter</h4><img src="/public/icons/24px/mail.svg" alt="newsletter"
+                            class="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/fr/10-about.html">
+                        <h4 class="footer__title">à propos</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <a class="footer__lang" href="/pages/fr/index.html"><img src="/public/icons/32px/fr_flag.svg"
+                    alt="french_flag"></a>
+            <a class="footer__lang" href="/pages/en/index.html"><img src="/public/icons/32px/en_flag.svg"
+                    alt="english_flag"></a>
+        </div>
+        <div class="footer__social">
+            <h3>Nous suivre</h3>
+            <ul class="footer__list list-unstyled">
+                <li class="align">
+                    <a href="https://facebook.com" aria-label="facebook"><img class="footer__iconSocial"
+                            src="/public/icons/24px/facebook.svg" alt="facebook" /></a>
+                </li>
+                <li class="align">
+                    <a href="https://instagram.com" aria-label="instagram"><img class="footer__iconSocial"
+                            src="/public/icons/24px/instagram.svg" alt="instagram" /></a>
+
+                </li>
+                <li class="align">
+                    <a href="https://twitter.com" aria-label="twitter"><img class="footer__iconSocial"
+                            src="/public/icons/24px/twitter.svg" alt="twitter" /></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img class="footer__logo__arrow" src="/public/icons/32px+/big-up-blue.svg" alt="arrow_up">
+            <img class="footer__logo" src="/public/icons/logos/logo_center_decline.svg" alt="logo_footer">
+            <p>Romain Grosjean - Gr·A1</p>
+            <p>mail : </p>
+            <address class="footer__address"><a
+                    href="mailto:conservatoire@agglo-belfort.fr">romaindyvertiteam@gmail.com</a>
+            </address>
+            <a href="https://butmmi.thomasjeu.fr" aria-label="mmi"><img class="footer__logo__mmi"
+                    src="/public/icons/32px+/logo_mmi.svg" alt="logo_mmi"></a>
+        </div>
+        <div>
+            <h3>Mentions légales</h3>
+            <p>Projet réalisé dans le cadre d'un exercice pédagogique au
+                département BUT MMI de Montbéliard - 2023-2024</p>
+            <p class="host">*Hébergeur : <a href="https://www.infomaniak.com" target="_blank">Infomaniak</a></p>
+            <img class="signature" src="/public/icons/32px+/signature.svg" alt="signature_perso">
+
+        </div>
+    </footer>
 </body>
+
 </html>
