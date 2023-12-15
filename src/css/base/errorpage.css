@@ -1,13 +1,29 @@
+/* Pages 404
+
+Sommaire :
+
+    1. error-container
+    2. error-container h2
+    3. error-text
+*/
 
 
-.error-page{
-  
-}
+ .error-container {
+     text-align: center;
+ }
 
-.error-container {
-    
-}
+ .error-container h2 {
+     font-size: 3em;
+     margin-bottom: 10px;
+     color: var(--system-red);
+ }
 
-.error-text {
+ .error-text {
+     font-size: 1.2em;
+     color: var(--system-red);
+ }
 
-}
+ .error-link {
+     color: var(--lightblue-1);
+     text-decoration: none;
+ }
