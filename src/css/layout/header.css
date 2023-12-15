@@ -11,7 +11,7 @@ Sommaire :
 .header {
     display: flex;
     background-color: var(--baseblue-2);
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
