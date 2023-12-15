@@ -3,11 +3,45 @@
 Sommaire :
 
     1. form
+    2. label
+    3. input, textarea
+    4. input[type="submit"]
+    5. input[type="submit"]:hover
 */
 
-.button_form {
-    display: inline-flex;
-    padding: auto;
-    justify-content: center;
-    gap: 1rem;
+form {
+    max-width: 400px;
+    background-color: var(--grey-1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--baseblue-1)
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--baseblue-1);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid var(--lightblue-2);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: var(--lightblue-2);
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--lightblue-1);
 }
