@@ -1,26 +1,52 @@
+/* Composant - Intro
+
+Sommaire :
+
+    1. intro
+    2. intro__header
+    3. intro__img
+    4. main__image
+    5. intro__sub-title  
+*/
+
 .intro {
     margin: var(--space5x) 0;
 }
 
 .intro__header {
     padding: var(--space5x) 0;
-}
-
-.intro__title {
-    font-size: var(--title-xl);
-    line-height: 1.5;
-    font-style: italic;
-}
-
-.intro__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space3x);
-}
-
-.intro__nb {
-    display: block;
-    font-size: var(--text-xxl);
-    line-height: 1.1;
+    height: 80vh;
+    position: relative;
     color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: var(--space5x);
+    overflow: hidden;
+}
+
+.intro__img {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.main__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    inset: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    position: relative;
+    object-position: center bottom;
+}
+
+.intro__sub-title {
+    font-size: var(--text-lg);
+    color: var(--yellow-1);
+    line-height: 1.3;
 }

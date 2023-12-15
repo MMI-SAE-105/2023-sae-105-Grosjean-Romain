@@ -2,7 +2,15 @@
 
 Sommaire :
 
-    1.
+    1. section
+    2. section--bg
+    3. section__title
+    4. section__intro
+    5. section__img
+    6. section__img::after
+    7. card__div
+    8. section__link
+    9. accès
 */
 
 .section {
@@ -56,7 +64,7 @@ Sommaire :
     margin-bottom: var(--space3x);
 }
 
-/* Accès */
+/* accès */
 
 .metro-line4 {
     color: #cf009e;

@@ -3,10 +3,18 @@
 Sommaire :
 
     1. menu
-    2. menu-btn
-    3. menu-btn__bar
-    4. menu-btn__bar::before
-    5. menu-btn__bar::after    
+    2. menu--open
+    3. menu__list
+    4. menu__item
+    5. menu__link
+    6. menu-btn
+    7. menu-btn__bar
+    8. menu-btn__bar::before
+    9. menu-btn__bar::after
+    10. menu-btn--open .menu-btn__bar
+    11. menu-btn--open .menu-btn__bar::before
+    12. menu-btn--open .menu-btn__bar::after
+ 
 */
 
 .menu {

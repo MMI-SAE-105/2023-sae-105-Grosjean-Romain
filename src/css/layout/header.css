@@ -1,29 +1,41 @@
-/* Header des pages
+/* Menu des pages
 
 Sommaire :
 
     1. header
-    2. header__end
-    3. header__logo
-    4. header__menu
+    2. header__start
+    3. header__align
+    4. header__end
+    5. header__logo-typo
+    6. header__logo-sun
+    7. header__menu
 */
 
 .header {
     display: flex;
     background-color: var(--baseblue-2);
-    position: relative;
     top: 0;
     left: 0;
     width: 100%;
+    height: auto;
     padding: var(--space2x) var(--space4x);
     justify-content: space-between;
-    align-items: center;
     flex-shrink: 0;
+    position: fixed;
     z-index: 2;
 
 }
 
-.header__start {}
+.header__start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header__align {
+    display: flex;
+    align-items: center;
+}
 
 .header--atTop {
     background-color: var(--white);
@@ -35,20 +47,34 @@ Sommaire :
     gap: var(--space2x);
 }
 
-.header__logo-typo {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
+.header__logo-typo,
+.header__logo-sun {
+    display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.header__logo-typo {
+    top: 0%;
+    left: 0%;
+    height: 10vh;
+    margin: 0;
+    
 }
 
 .header__logo-sun {
-    display: block;
-    flex-direction: column;
+    height: 20vh;
+    margin: 0;
     justify-content: center;
-    align-items: center;
 }
 
 .header__menu {
     display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .header__logo-typo {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

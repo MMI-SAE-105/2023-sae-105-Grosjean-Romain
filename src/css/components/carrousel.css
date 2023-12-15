@@ -1,3 +1,22 @@
+/* Composant - Carrousel
+
+Sommaire :
+
+    1. carrousel
+    2. carrouselparent-ecrans
+    3. carrouselecran
+    4. carrouselbtn
+    5. carrouselbtn-avant
+    6. carrouselbtn-apres
+    7. carousselliste-liens
+    8. caroussellien
+    9. carrousel
+    10. carrousel__item
+    11. carousel::-webkit-scrollbar-track
+    12. carousel::-webkit-scrollbar-thumb
+    14. carousselliste-liens a.actif
+*/
+
 .carrousel,
 .carrouselparent-ecrans,
 .carrouselecran,
@@ -89,13 +108,6 @@
 .carousel::-webkit-scrollbar-track,
 .carousel::-webkit-scrollbar-thumb {
     background-color: var(--white);
-}
-
-img {
-    display: block;
-    max-width: 85%;
-    margin: 0 auto;
-    height: auto;
 }
 
 .carousselliste-liens a.actif {

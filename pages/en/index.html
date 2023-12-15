@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ces'Art Pelli ｜ Homepage</title>
-        <link rel="icon" href="/public/icons/logos/logo_sun-1.svg">
+        <link rel="icon" href="/public/icons/logos/logo_sun-4.svg">
         <link rel="stylesheet" href="/src/css/vendors/style.css">
         <link rel="alternate" hreflang="en" href="/pages/en/index.html">
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -16,7 +16,7 @@
         <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
                 :class="{ 'header__atTop' : }">
                 <div class="header__start">
-                        <a href="/pages/en/index.html">
+                        <a class="header__align" href="/pages/en/index.html">
                                 <img class="header__logo-sun" src="/public/icons/logos/logo_sun-4.svg"
                                         alt="main__logo-sun">
                                 <img class="header__logo-typo" src="/public/icons/logos/logo_typo.svg"
@@ -339,24 +339,32 @@
                         <img class="footer__logo" src="/public/icons/logos/logo_center_footer.svg" alt="logo_footer">
                         <ul class="footer__list list-unstyled">
                                 <li>
-                                        <a href=""><h4 class="footer__title">menu</h4></a>
+                                        <a href="">
+                                                <h4 class="footer__title">menu</h4>
+                                        </a>
                                 </li>
                                 <li>
-                                        <a href="/pages/en/0-profil.html"><h4 class="footer__title">cesar pelli</h4></a>
+                                        <a href="/pages/en/0-profil.html">
+                                                <h4 class="footer__title">cesar pelli</h4>
+                                        </a>
                                 </li>
                                 <li class="align">
-                                        <a href="/pages/en/9-form.html"><h4 class="footer__title">newsletter</h4><img src="/public/icons/24px/mail.svg"
-                                                alt="newsletter" class="icon"></a>
+                                        <a href="/pages/en/9-form.html">
+                                                <h4 class="footer__title">newsletter</h4><img
+                                                        src="/public/icons/24px/mail.svg" alt="newsletter" class="icon">
+                                        </a>
                                 </li>
                                 <li>
-                                        <a href="/pages/en/10-about.html"><h4 class="footer__title">about</h4></a>
+                                        <a href="/pages/en/10-about.html">
+                                                <h4 class="footer__title">about</h4>
+                                        </a>
                                 </li>
                         </ul>
                 </div>
                 <div>
-                        <a class="footer__lang" href="/pages/fr/index.html"><img  src="/public/icons/32px/fr_flag.svg"
+                        <a class="footer__lang" href="/pages/fr/index.html"><img src="/public/icons/32px/fr_flag.svg"
                                         alt="french_flag"></a>
-                        <a class="footer__lang" href="/pages/en/index.html"><img  src="/public/icons/32px/en_flag.svg"
+                        <a class="footer__lang" href="/pages/en/index.html"><img src="/public/icons/32px/en_flag.svg"
                                         alt="english_flag"></a>
                 </div>
                 <div class="footer__social">
@@ -395,7 +403,8 @@
                         <h3>Mentions légales</h3>
                         <p>Projet réalisé dans le cadre d'un exercice pédagogique au
                                 département BUT MMI de Montbéliard - 2023-2024</p>
-                        <p class="host">*Hébergeur : <a href="https://www.infomaniak.com/fr" target="_blank">Infomaniak</a></p>
+                        <p class="host">*Hébergeur : <a href="https://www.infomaniak.com/fr"
+                                        target="_blank">Infomaniak</a></p>
                         <img class="signature" src="/public/icons/32px+/signature.svg" alt="signature_perso">
 
                 </div>

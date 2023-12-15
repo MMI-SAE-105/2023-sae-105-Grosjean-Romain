@@ -1,0 +1,43 @@
+/* Composant - Btn
+
+Sommaire :
+
+    1. btn
+    2. btn--outlined
+*/
+
+/* btn */
+
+.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: var(--text-sm);
+    color: var(--gray-black);
+    letter-spacing: var(--letter-spacing);
+    border: 1px solid var(--baseblue-1);
+    padding: var(--space2x) var(--space3x);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space2x);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: inset 0 0 0 var(--space1x) var(--baseblue-1);
+}
+
+/* btn--oulined */
+
+.btn--outlined {
+    border-color: var(--white);
+    color: var(--white);
+}
+
+.btn--outlined img {
+    filter: invert();
+}
+
+.btn--outlined:hover {
+    box-shadow: inset 0 0 0 var(--space1x) var(--white);
+}

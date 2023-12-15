@@ -9,12 +9,27 @@ Sommaire :
 
 /* Images et vidéos */
 
-img:not(.header__logo):not(.header__logo-typo):not(.footer__logo):not(.signature):not(.footer__logo__mmi):not(.icon):not(.section__link):not(.lang):not(.footer__logo__arrow):not(.main__image),
+img:not(.main__image):not(.header__logo):not(.header__logo-typo):not(.footer__logo):not(.signature):not(.footer__logo__mmi):not(.icon):not(.section__link):not(.lang):not(.footer__logo__arrow),
 video {
     width: 100%;
     height: auto;
-    border-radius: 12px;
     display: block;
+    border-radius: 12px;
+    max-width: 85%;
+    margin: 0;
+}
+
+img.main__image {
+    position: absolute;
+    margin: auto;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center bottom;
 }
 
 /* Figure */
@@ -28,7 +43,6 @@ figure {
 .duotone {
     position: relative;
     background-color: var(--baseblue-1);
-    z-index: -1;
 }
 
 .duotone>img {
@@ -44,11 +58,11 @@ figure {
 .duotone::before {
     content: "";
     position: absolute;
-    inset: 0;
     background-color: var(--baseblue-2);
     opacity: 0.3;
     z-index: 1;
     mix-blend-mode: lighten;
+    inset: 0;
 }
 
 .container {

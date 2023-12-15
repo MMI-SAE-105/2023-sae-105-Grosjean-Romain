@@ -3,9 +3,17 @@
 Sommaire :
 
     1. footer
-    2. footer a
-    3. footer__list
-    4. footer__title
+    2. footer__list
+    3. footer__title
+    4. footer__social
+    5. footer__logo
+    6. footer__logo__arrow
+    7. footer__lang
+    8. footer__address
+    9. footer__logo__mmi
+    10.footer__title-container
+    11.signature
+    12.host
 */
 
 .footer {
@@ -52,10 +60,10 @@ Sommaire :
 
 .align a .footer__social {
     display: flex;
-        align-items: center;
-        margin: auto;
-        margin-right: 10%;
-        
+    align-items: center;
+    margin: auto;
+    margin-right: 10%;
+
 }
 
 .align a .footer__iconSocial {
@@ -103,7 +111,7 @@ Sommaire :
 }
 
 .footer__address {
-font-family: var(--font-heading-3);
+    font-family: var(--font-heading-3);
 }
 
 .footer__logo__mmi {
@@ -113,6 +121,11 @@ font-family: var(--font-heading-3);
     height: 8vh;
 }
 
+.footer__title-container {
+    display: flex;
+    align-items: center;
+}
+
 .signature {
     display: flex;
     margin-left: 90%;
@@ -120,11 +133,6 @@ font-family: var(--font-heading-3);
     height: 5vh;
 }
 
-.host{
-color: var(--lightblue-2);
-}
-
-.footer__title-container {
-    display: flex;
-    align-items: center;
+.host {
+    color: var(--lightblue-2);
 }
